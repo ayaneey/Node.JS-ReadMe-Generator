@@ -42,7 +42,7 @@ function init() {
           name: "license",
           message: "Which license do you want to select?",
           choices: [
-           "MIT", "BSD_2", "GNU"
+           "MIT", "BSD_2", "GNU_GPL_3"
           ],
         },
       ])
