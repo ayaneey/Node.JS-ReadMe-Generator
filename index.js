@@ -22,7 +22,7 @@ function init() {
           message: "What is your description?",
         },
         {
-          name: "installation instruction",
+          name: "installation",
           message: "What is your installation instruction?",
         },
         {
@@ -49,7 +49,7 @@ function init() {
       .then((answers) => {
         // console.info("Answer:", answers.projectTitle);
         // console.info("Answer:", answers.description);
-        // console.info("Answer:", answers.installation instruction);
+        // console.info("Answer:", answers.installation);
         // console.info("Answer:", answers.usage);
         // console.info("Answer:", answers.contribution);
         // console.info("Answer:", answers.test);
