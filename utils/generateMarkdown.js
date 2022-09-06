@@ -22,7 +22,9 @@ let license = generateLicenseBadge(data.license);
   - [Contribution](#Contribution)
   - [Test](#Test)
   - [License](#License)
-  // add github username , user email
+  - [Github](#Github)
+  - [Email](#Email)
+
 
   ## Description
   ${data.description}
@@ -42,9 +44,12 @@ let license = generateLicenseBadge(data.license);
   ## License
   ${license}
 
-   ## Github
-  
-  // github & email
+  ## Github
+  ${data.github}
+
+  ## Email
+  ${data.email}
+
 
 `;
 }
