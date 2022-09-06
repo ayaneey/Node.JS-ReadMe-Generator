@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 // TODO: Include packages needed for this application
    const inquirer = require("inquirer");
    const generateMarkdown = require("./utils/generateMarkdown");
@@ -5,7 +7,11 @@
 const questions = [];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(data) {
+    fs.writeFileSync('./output/README.md', data, (error)=>{
+        error?console.error(error):console.log("readMe Generated")
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -41,22 +47,24 @@ function init() {
           type: "list",
           name: "license",
           message: "Which license do you want to select?",
-          choices: [
-           "MIT", "BSD_2", "GNU_GPL_3"
-          ],
+          choices: ["MIT", "BSD_2", "GNU_GPL_3"],
+        },
+        {
+          name: "github",
+          message: "What is your Github username?",
+        },
+        {
+          name: "email",
+          message: "What is your email?",
         },
       ])
       .then((answers) => {
-        // console.info("Answer:", answers.projectTitle);
-        // console.info("Answer:", answers.description);
-        // console.info("Answer:", answers.installation);
-        // console.info("Answer:", answers.usage);
-        // console.info("Answer:", answers.contribution);
-        // console.info("Answer:", answers.test);
-        // console.info("Answer:", answers.license);
-        generateMarkdown(answers);
+        let readMeContents = generateMarkdown(answers);
+        writeToFile(readMeContents);
       });
 }
+
+
 
 // Function call to initialize app
 init();

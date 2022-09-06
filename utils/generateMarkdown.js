@@ -13,15 +13,16 @@ function generateLicenseBadge(license){
 function generateMarkdown(data) {
 let license = generateLicenseBadge(data.license);
   return `
-  # ${data.title}
+  # ${data.projectTitle}
 
   ## Contents
-  - [Description](#Description);
-  - [Installation Instruction](#Installation);
-  - [Usage](#Usage);
-  - [Contribution](#Contribution);
-  - [Test](#Test);
-  - [License](#License);
+  - [Description](#Description)
+  - [Installation Instruction](#Installation)
+  - [Usage](#Usage)
+  - [Contribution](#Contribution)
+  - [Test](#Test)
+  - [License](#License)
+  // add github username , user email
 
   ## Description
   ${data.description}
@@ -40,7 +41,10 @@ let license = generateLicenseBadge(data.license);
 
   ## License
   ${license}
+
+   ## Github
   
+  // github & email
 
 `;
 }
