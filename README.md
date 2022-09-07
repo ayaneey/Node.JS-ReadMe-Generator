@@ -9,6 +9,7 @@
 - [Usage](#Usage)
 - [Contribution](#Contribution)
 - [Test](#Test)
+- [Technology](#Technology)
 - [License](#License)
 - [Github](#Github)
 - [Email](#Email)
@@ -52,6 +53,12 @@ Made by @ayaneey 👩🏽‍💻
 ## Test
 
 [![Website naereen.github.io](https://img.shields.io/website-up-down-green-red/https/naereen.github.io.svg)](https://naereen.github.io/)
+
+## Technology
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
 ## License
 
