@@ -17,7 +17,7 @@ let license = generateLicenseBadge(data.license);
 
   ## Contents
   - [Description](#Description)
-  - [Installation Instruction](#Installation)
+  - [Installation](#Installation)
   - [Usage](#Usage)
   - [Contribution](#Contribution)
   - [Test](#Test)
