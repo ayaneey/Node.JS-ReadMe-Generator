@@ -20,7 +20,6 @@ A readMe is standard practice in code; it allows you to input important informat
 To install, follow the steps below:
 
 1. Ensure you have Node downloaded in your computer. To check if you already have it, in your terminal type: 
-<br>
 <b> node -v </b>
 <br>
 This should print a version number, so you'll see something like this v0 (If this is the case, please ignore step 1). If you do not have Node installed, follow this link:
